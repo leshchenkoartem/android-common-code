@@ -1,0 +1,8 @@
+<resources>
+  <string name="buttons_ok">Ok</string>
+  <string name="buttons_yes">Yes</string>
+  <string name="buttons_cancel">Cancel</string>
+  <string name="buttons_no">No</string>
+  <string name="buttons_save">Save</string>
+  <string name="buttons_retry">Retry</string>
+</resources>
