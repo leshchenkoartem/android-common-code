@@ -11,8 +11,8 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.app3null.common_code.R
 import com.google.android.material.snackbar.Snackbar
-import com.zuluft.mvvm.common.extensions.colorOf
-import com.zuluft.mvvm.common.extensions.notNull
+import com.app3null.common_code.mvvm.common.extensions.colorOf
+import com.app3null.common_code.mvvm.common.extensions.notNull
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
