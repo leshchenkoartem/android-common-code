@@ -1,14 +1,16 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
+    namespace 'com.app3null.common_code'
+
+    compileSdkVersion 34
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -23,12 +25,29 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "com.github.Zuluft:MVVM_base_structure:$mvvm_version"
+//    implementation "com.github.Zuluft:MVVM_base_structure:$mvvm_version"
+//    implementation 'com.github.leshchenkoartem:MVVM_base_structure:0.9999'
+    implementation 'com.github.leshchenkoartem:MVVM_base_structure:0.96.1'
     implementation "com.squareup.okhttp3:logging-interceptor:$logging_version"
     implementation "com.github.tbruyelle:rxpermissions:$permissions_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"

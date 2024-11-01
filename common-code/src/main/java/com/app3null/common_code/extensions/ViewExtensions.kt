@@ -52,12 +52,12 @@ fun Context.fontOf(@FontRes font: Int): Typeface? {
 }
 
 fun View.addRipple() = with(TypedValue()) {
-    context.theme.resolveAttribute(R.attr.selectableItemBackground, this, true)
+//    context.theme.resolveAttribute(R.attr.selectableItemBackground, this, true)
     setBackgroundResource(resourceId)
 }
 
 fun View.addCircleRipple() = with(TypedValue()) {
-    context.theme.resolveAttribute(R.attr.selectableItemBackgroundBorderless, this, true)
+//    context.theme.resolveAttribute(R.attr.selectableItemBackgroundBorderless, this, true)
     setBackgroundResource(resourceId)
 }
 
