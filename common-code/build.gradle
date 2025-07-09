@@ -49,7 +49,7 @@ dependencies {
 //    implementation 'com.github.leshchenkoartem:MVVM_base_structure:0.9999'
     implementation 'com.github.leshchenkoartem:MVVM_base_structure:0.96.1'
     implementation "com.squareup.okhttp3:logging-interceptor:$logging_version"
-    implementation "com.github.tbruyelle:rxpermissions:$permissions_version"
+//    implementation "com.github.tbruyelle:rxpermissions:$permissions_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "de.cketti.mailto:email-intent-builder:$eib_version"
     implementation "com.jakewharton.rxbinding3:rxbinding:$rx_binding_version"
