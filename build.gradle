@@ -5,7 +5,7 @@ buildscript {
     ext.gradle_version = '3.6.1'
     ext.safe_args_version = '2.1.0'
     ext.mvvm_version = '0.96'
-    ext.permissions_version = 'v0.12'
+    ext.permissions_version = '0.12'
     ext.constraint_layout_version = '2.0.0-beta4'
     ext.logging_version = '4.2.2'
     ext.eib_version = '2.0.0'
